@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Mini Blog in Next.js – One-Page Class Handout (JavaScript Version)
 
-First, run the development server:
+## 🧰 What You’ll Learn
+- How to scaffold a Next.js app using the App Router
+- How to create static and dynamic routes
+- How to use server and client components
+- How to simulate data fetching
+- How to use React state in Next.js
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📁 Project Structure
+```
+my-mini-blog-js/
+├── app/
+│   ├── page.js              # Home
+│   └── posts/
+│       ├── page.js          # Blog list
+│       └── [slug]/page.js   # Individual post
+├── components/LikeButton.js # Client component
+├── data/posts.js            # Blog data
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠 Setup Instructions
+```bash
+npx create-next-app@latest my-mini-blog-js --javascript --app
+cd my-mini-blog-js
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✍️ Key Code Snippets
 
-To learn more about Next.js, take a look at the following resources:
+### 1. `data/posts.js`
+```js
+export const posts = [
+  { slug: "hello-nextjs", title: "Hello Next.js", content: "..." },
+  { slug: "about-server-components", title: "About Server Components", content: "..." },
+];
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. `app/page.js`
+```jsx
+export default function HomePage() {
+  return <a href="/posts">Go to Posts</a>;
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. `app/posts/page.js`
+```jsx
+import { posts } from "../../data/posts";
+import Link from "next/link";
 
-## Deploy on Vercel
+export default function PostsPage() {
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li key={post.slug}>
+          <Link href={"/posts/" + post.slug}>{post.title}</Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4. `app/posts/[slug]/page.js`
+```jsx
+import { posts } from "../../../data/posts";
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+export async function generateStaticParams() {
+  return posts.map((post) => ({ slug: post.slug }));
+}
+
+export default async function PostPage({ params }) {
+  const post = posts.find(p => p.slug === params.slug);
+  return post ? (
+    <>
+      <h2>{post.title}</h2>
+      <p>{post.content}</p>
+    </>
+  ) : <p>Not found</p>;
+}
+```
+
+### 5. `components/LikeButton.js`
+```jsx
+"use client";
+import { useState } from "react";
+
+export default function LikeButton() {
+  const [likes, setLikes] = useState(0);
+  return <button onClick={() => setLikes(likes + 1)}>❤️ {likes} Likes</button>;
+}
+```
+
+Use `<LikeButton />` inside `PostPage`.
+
+---
+
+## 📚 Additional Learning
+- [Server Components](https://react.dev/reference/rsc/server-components)
+- [Next.js App Router Docs](https://nextjs.org/docs/app/building-your-application/routing)
+
+Happy coding! 🚀
