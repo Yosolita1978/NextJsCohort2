@@ -12,10 +12,16 @@ In this first session, we covered the fundamentals and set up our first project 
 
 ---
 
+## 📊 View the Slides  
+**📌 Session 1 Slides:**  
+[Open Canva Slides](https://www.canva.com/design/DAGK9Y4Cvb0/Tnngd9YNIPRykk-dqOnEKA/view?utm_content=DAGK9Y4Cvb0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1135ab00c7)
+
+---
+
 ## 📝 Handout & Code
 
 - **📄 One-Page Handout** – Key takeaways and code snippets:  
-  [Download Handout (Markdown)](https://github.com/Yosolita1978/NextJsCohort2/blob/main/nextjs-mini-blog-handout.md)
+  [Download Handout (Markdown)](nextjs-mini-blog-handout.md)
 
 - **📁 Starter Repo** – Code for the mini blog project:  
   This repo! Clone or fork it to follow along.
@@ -32,12 +38,11 @@ In this first session, we covered the fundamentals and set up our first project 
 
 ---
 
-## 💻 Your Homework
+## 🔮 Coming Up in Session 2
 
-- [ ] Add a `createdAt` date to each post in `data/posts.js`
-- [ ] Sort blog posts by date on the posts page
-- [ ] Customize your Like Button (emoji, label, or color)
-- [ ] Bonus: Add a custom `404.js` page
+📦 How to integrate and use **TailwindCSS** for styling  
+📅 How to add and display **post dates**  
+🌐 How to **fetch data** using `async` Server Components
 
 ---
 
