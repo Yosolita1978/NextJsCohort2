@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand: #e94e11;
 }
 
 @theme inline {
@@ -24,3 +25,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* a{
+  color: red;
+  text-decoration: none;
+} */
+
+.container { max-width: 960px; margin-inline: auto; padding: 1rem; }
+
+.site-header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; }
+.site-nav { display: flex; align-items: center; justify-content: space-between; }
+.brand { font-weight: 700; color: var(--brand); }
+.links { display: flex; gap: 1rem; list-style: none; padding: 0; margin: 0; }
+.links a { padding: .25rem .5rem; border-radius: .5rem; }
+.links a:hover { background: #f3f4f6; }

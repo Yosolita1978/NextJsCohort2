@@ -1,0 +1,12 @@
+.likeButton {
+    background-color: #f43faf;
+    color: white;
+    padding: .5rem 1rem;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color .2s ease;
+  }
+
+  .likeButton:hover { background-color: #1d85e1; }
