@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 export default function NavBar() {
     return (
         
         <nav className="site-nav container">
-            <a href="/" className="brand">Home</a>
+            <Link href="/" className="brand">Home</Link>
             <ul className="links">
-                <li> <a href="/posts">Blog</a></li>
-                <li> <a href="/subscribe">Subscribe</a></li>
+                <li> <Link href="/posts">Blog</Link></li>
+                <li> <Link href="/subscribe">Subscribe</Link></li>
             </ul>
         </nav>
     
