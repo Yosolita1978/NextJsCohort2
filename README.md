@@ -28,16 +28,46 @@ In this first session, we covered the fundamentals and set up our first project 
   - Styling with Tailwind and CSS Modules
   - Incremental Static Regeneration (ISR) with `revalidate`
 
+---
+
+## Session 3
+
+- 🎥 Video: [Watch on YouTube](https://youtu.be/21bRd5_GHEc)  
+- 📊 Slides: [View Slides](https://www.canva.com/design/DAGOHxNeySc/P-jHy34W2Fz7UINxfNDiOg/view?utm_content=DAGOHxNeySc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h54ab83c1b8)  
+- 📚 Topics:  
+  - Reviewing CSS organization and custom properties  
+  - Setting up environment variables securely in Next.js  
+  - Building a subscribe form with validation and accessibility  
+  - Connecting the form to Airtable via an API route  
+  - Preventing duplicate subscriptions  
+
+---
+
+## 📅 What’s Next?
+
+**Session 4** → Saturday, **August 23, 2025 at 10 a.m. PST**  
+We’ll dive into:  
+- Authentication basics with Auth0  
+- Protected routes in Next.js  
+- More practice with server vs client data fetching  
+
+---
+
 ## 📚 Resources
-- [Moon Highway React Server Components](https://github.com/MoonHighway/react-server-components)
-- [Neil Cummings' Complete Guide to Next.js](https://www.udemy.com/course/the-complete-guide-to-building-a-full-stack-app-with-nextjs)
-- [React Server Components Overview](https://react.dev/reference/rsc/server-components)
+
+- [Moon Highway React Server Components](https://github.com/MoonHighway/react-server-components)  
+- [Neil Cummings' Complete Guide to Next.js](https://www.udemy.com/course/the-complete-guide-to-building-a-full-stack-app-with-nextjs)  
+- [React Server Components Overview](https://react.dev/reference/rsc/server-components)  
+
+---
 
 ## 🛠 Prerequisites
-- Basic knowledge of JavaScript and React
-- Node.js installed locally
-- Git and GitHub account
 
+- Basic knowledge of JavaScript and React  
+- Node.js installed locally  
+- Git and GitHub account  
+
+---
 ## 🚀 Getting Started
 1. Clone the repository:
    ```bash
@@ -60,4 +90,5 @@ npm run dev
 - [LinkedIn](https://www.linkedin.com/in/cristinarodriguez1978/)
 
 Thanks for joining!  
-Stay curious and keep building. See you in Session 3 🚀
+Stay curious and keep building. See you in Session 4 🚀
+**Session 4** → Saturday, **August 23, 2025 at 10 a.m. PST**  
