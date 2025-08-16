@@ -1,12 +1,89 @@
 .likeButton {
-    background-color: #f43faf;
-    color: white;
-    padding: .5rem 1rem;
-    border: 0;
-    border-radius: .5rem;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color .2s ease;
-  }
+  background: linear-gradient(135deg, #d90368 0%, #820263 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  border: 1px solid rgba(255, 212, 0, 0.3);
+}
 
-  .likeButton:hover { background-color: #1d85e1; }
+.likeButton::before {
+  content: '❤️';
+  display: inline-block;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 4px rgba(255, 212, 0, 0.5));
+}
+
+.likeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgb(217 3 104 / 0.3), 0 8px 10px -6px rgb(130 2 99 / 0.3);
+  border-color: #ffd400;
+  background: linear-gradient(135deg, #e91e7a 0%, #930270 100%);
+}
+
+.likeButton:hover::before {
+  transform: scale(1.2);
+  animation: pulse 0.6s ease;
+}
+
+.likeButton:active {
+  transform: translateY(0);
+  background: linear-gradient(135deg, #820263 0%, #2e294e 100%);
+}
+
+/* Ripple effect on click */
+.likeButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 212, 0, 0.4);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.likeButton:active::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Pulse animation for heart emoji */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}
+
+/* Focus state */
+.likeButton:focus {
+  outline: 2px solid #ffd400;
+  outline-offset: 2px;
+}
+
+/* Loading state (optional) */
+.likeButton.loading {
+  background: linear-gradient(135deg, #6b5b57 0%, #2e294e 100%);
+  cursor: not-allowed;
+}
+
+.likeButton.loading::before {
+  content: '⏳';
+  animation: none;
+}
