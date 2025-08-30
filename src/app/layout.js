@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import { Auth0Provider } from "@auth0/nextjs-auth0";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +25,12 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true}
       >
+        <Auth0Provider>
         <header className="site-header">
           <NavBar />
         </header>
         {children}
+        </Auth0Provider>
       </body>
     </html>
   );

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^4.9.0",
     "airtable": "^0.12.2",
     "next": "15.4.5",
     "postcss": "^8.5.6",
