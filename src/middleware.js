@@ -1,14 +1,10 @@
 import { auth0 } from "./lib/auth0.js";
 
 export async function middleware(request) {
-  // In Next.js 15, we need to handle the request differently
-  const url = new URL(request.url);
-  const pathname = url.pathname;
+  console.log("🔥 Middleware running for:", request.nextUrl.pathname);
   
-  console.log("🔥 Middleware running for:", pathname);
-  
-  if (pathname.startsWith('/auth')) {
-    console.log("🔐 Handling auth route:", pathname);
+  if (request.nextUrl.pathname.startsWith('/auth')) {
+    console.log("🔐 Handling auth route:", request.nextUrl.pathname);
   }
   
   return await auth0.middleware(request);

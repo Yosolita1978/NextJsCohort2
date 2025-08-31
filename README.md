@@ -1,8 +1,8 @@
 
-# 🧠 Next.js Cohort 2 – Day 1 Recap
+# 🧠 Next.js Cohort 2 – Recap
 
 Welcome to the second cohort of our **Next.js Course**! 🎉  
-In this first session, we covered the fundamentals and set up our first project together.
+Here’s a recap of everything we built together across all sessions.
 
 ---
 
@@ -15,6 +15,8 @@ In this first session, we covered the fundamentals and set up our first project 
   - Routing and folder structure
   - Fetching data
   - CSS Modules
+
+---
 
 ### Session 2
 - **Video:** [Watch on YouTube](https://youtu.be/ruTsUKzSuuw)
@@ -30,11 +32,10 @@ In this first session, we covered the fundamentals and set up our first project 
 
 ---
 
-## Session 3
-
-- 🎥 Video: [Watch on YouTube](https://youtu.be/21bRd5_GHEc)  
-- 📊 Slides: [View Slides](https://www.canva.com/design/DAGOHxNeySc/P-jHy34W2Fz7UINxfNDiOg/view?utm_content=DAGOHxNeySc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h54ab83c1b8)  
-- 📚 Topics:  
+### Session 3
+- **Video:** [Watch on YouTube](https://youtu.be/21bRd5_GHEc)  
+- **Slides:** [View Slides](https://www.canva.com/design/DAGOHxNeySc/P-jHy34W2Fz7UINxfNDiOg/view?utm_content=DAGOHxNeySc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h54ab83c1b8)  
+- **Topics:**
   - Reviewing CSS organization and custom properties  
   - Setting up environment variables securely in Next.js  
   - Building a subscribe form with validation and accessibility  
@@ -43,13 +44,25 @@ In this first session, we covered the fundamentals and set up our first project 
 
 ---
 
-## 📅 What’s Next?
+### Session 4 – Final Session 🎉
+- **Video:** [Watch on YouTube](https://youtu.be/xcGWe_51QKA)  
+- **Slides:** [View Slides](https://www.canva.com/design/DAGxhXKloa4/sVMcga3P1q508aZBXOQ9Sg/view?utm_content=DAGxhXKloa4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he15fa5ef53)  
+- **Topics:**
+  - Authentication basics with Auth0  
+  - Configuring environment variables for local and production  
+  - Using middleware and `useUser()` to protect routes  
+  - Deploying a Next.js project to Vercel  
+  - Common troubleshooting tips for authentication flows  
 
-**Session 4** → Saturday, **August 23, 2025 at 10 a.m. PST**  
-We’ll dive into:  
-- Authentication basics with Auth0  
-- Protected routes in Next.js  
-- More practice with server vs client data fetching  
+---
+
+## 📣 What’s Next?
+
+This was the **last session of the Next.js Course** 🚀  
+
+But don’t worry — I’m preparing a **new course on FastAPI** to connect a **Python backend with a React frontend**.  
+
+👉 Stay tuned to my [LinkedIn](https://www.linkedin.com/in/crissrodriguez/) for updates on the upcoming course!  
 
 ---
 
@@ -68,27 +81,16 @@ We’ll dive into:
 - Git and GitHub account  
 
 ---
+
 ## 🚀 Getting Started
 1. Clone the repository:
    ```bash
    git clone https://github.com/Yosolita1978/NextJsCohort2.git
-   ```
-Install dependencies:
 
-```bash
-npm install
-Run the development server:
-```
-
-```bash
-npm run dev
-🤝 Connect
-```
 
 ## 🤝 Connect
 - [Cristina's Portfolio](https://yosola.co)
 - [LinkedIn](https://www.linkedin.com/in/cristinarodriguez1978/)
 
 Thanks for joining!  
-Stay curious and keep building. See you in Session 4 🚀
-**Session 4** → Saturday, **August 23, 2025 at 10 a.m. PST**  
+Stay curious and keep building. 
